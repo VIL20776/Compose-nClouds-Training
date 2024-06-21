@@ -1,0 +1,10 @@
+services:
+  webapp:
+    build: ./webapp
+    ports:
+      - "8080:80"
+
+  database: 
+    build: ./database
+    environment:
+      MYSQL_ROOT_PASSWORD: cases123
